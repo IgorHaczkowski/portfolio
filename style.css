@@ -14,9 +14,50 @@ body {
     }
 }
 
-@media (max-width:1400px) {
+@media (max-width:1440px) {
     .wrapper {
         width: 100vw;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width:950px) {
+    p {
+        font-size: 14px;
+    }
+
+    div.information {
+        padding: 0px 5px 0px 0px
+    }
+
+    div.description {
+        padding: 0px 0px 0px 5px
+    }
+
+    header h1.h1-header {
+        font-size: 90px;
+        line-height: 110px;
+    }
+
+    header h2.h2-header {
+        font-size: 30px;
+        line-height: 42px;
+    }
+
+    header.socialmedia {
+        font-size: 24px
+    }
+
+    section.info h3 {
+        font-size: 15px;
+    }
+
+    section.info p {
+        font-size: 15px;
     }
 }
 
@@ -95,6 +136,8 @@ header {
     top: 25%;
     left: 20%;
     color: rgb(255, 185, 0);
+    animation: heading;
+    animation-duration: 3s;
 }
 
 .h2-header {
@@ -106,6 +149,19 @@ header {
     position: absolute;
     left: 22%;
     top: 46%;
+    /* opacity:0; */
+    animation: heading;
+    animation-duration: 5s
+}
+
+@keyframes heading {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
 }
 
 .socialmedia {
@@ -114,6 +170,21 @@ header {
     top: 58%;
     left: 23%;
     font-size: 32px;
+    animation: socialmedia;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+}
+
+@keyframes socialmedia {
+    0% {
+        top: 100%;
+        opacity: 0;
+    }
+
+    100% {
+        top: 58%;
+        opacity: 1;
+    }
 }
 
 .socialmedia i {
