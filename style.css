@@ -7,11 +7,22 @@ body {
     background-color: gainsboro;
 }
 
+@media (min-width: 1440px) {
+    .wrapper {
+        width: 1440px;
+        margin: 0 auto 0 auto;
+    }
+}
+
+@media (max-width:1400px) {
+    .wrapper {
+        width: 100vw;
+    }
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
-    width: 1440px;
-    margin: 0 auto 0 auto;
     background-color: white;
     font-family: Raleway;
 }
@@ -20,11 +31,10 @@ body {
 
 .navbar {
     display: flex;
-    margin: 35px 49px 5px 98px;
-    width: 1293px;
+    margin: 2% 10% 5px 10%;
+    width: 80%;
     flex-direction: row;
     justify-content: space-between;
-    font-family: Raleway;
     font-style: normal;
     font-weight: bold;
 }
@@ -32,28 +42,28 @@ body {
 nav ul {
     display: flex;
     flex-direction: row;
+    list-style: none;
 }
 
-nav ul li {
-    list-style: none;
+nav ul li a {
     margin: 0 20px 0 20px;
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 0.02em;
-    color: rgb(100, 100, 100);
-    cursor: pointer;
+    color: rgb(124, 118, 118);
+    text-decoration: none;
 }
 
-nav ul li:hover {
+nav ul li a:hover {
     color: rgb(0, 0, 0);
-    border-bottom: black 2px solid;
+    border-bottom: rgba(0, 0, 0, 0.5) 1px solid;
 }
 
 .logo i {
     font-family: 'Font Awesome 5 Free';
     font-size: 32px;
     vertical-align: -5px;
-    padding-right: 5px;
+    padding-right: 10px;
     color: black;
 }
 
@@ -65,60 +75,58 @@ div.logo {
 }
 
 
-
 /* header */
 header {
     display: block;
-    width: 1440px;
+    width: 100%;
     height: 550px;
     background-image: url("img/notebook-1280538_1920.jpg");
     background-size: cover;
-    font-family: Raleway;
-    font-style: normal;
     font-weight: bold;
     position: relative;
 }
 
-header h1 {
+.h1-header {
     font-size: 110px;
     line-height: 130px;
     text-align: center;
     letter-spacing: 0.02em;
     position: absolute;
-    top: 140px;
-    left: 280px;
+    top: 25%;
+    left: 20%;
     color: rgb(255, 185, 0);
 }
 
-header h2 {
+.h2-header {
     font-size: 36px;
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.02em;
     color: #FFFFFF;
     position: absolute;
-    left: 308px;
-    top: 255px;
+    left: 22%;
+    top: 46%;
 }
 
 .socialmedia {
     font-family: 'Font Awesome 5 Free';
     position: absolute;
-    top: 300px;
-    left: 300px;
+    top: 58%;
+    left: 23%;
     font-size: 32px;
 }
 
 .socialmedia i {
-    padding: 20px;
+    padding-right: 30px;
     color: rgb(255, 185, 0);
 }
 
 .socialmedia i:hover {
-    font-size: 36px;
+    color: white;
 }
 
 /* Intro */
+
 .intro h1 {
     font-weight: 300;
     font-size: 36px;
@@ -126,7 +134,9 @@ header h2 {
     text-align: center;
     letter-spacing: 0.02em;
     margin: 30px 0;
-    color: rgb(80, 80, 80)
+    color: rgb(80, 80, 80);
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .intro ul {
@@ -166,7 +176,7 @@ header h2 {
 /* About Me */
 div.firstrect {
     background: #FAFAFF;
-    width: 980px;
+    width: 68%;
     height: 430px;
 }
 
@@ -184,35 +194,48 @@ div.firstrect {
 article h1 {
     font-size: 32px;
     line-height: 38px;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.02px;
 }
 
 section.main {
     position: absolute;
     top: 70px;
-    left: 100px;
-    right: 100px;
+    left: 7%;
+    right: 7%;
     bottom: 70px;
     background-color: white;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
     display: flex;
     align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.about-inside {
+    position: absolute;
+    left: 16%;
+    display: flex;
 }
 
 .profile {
-    width: 100px;
     border-radius: 180px;
-    padding: 50px;
+    width: 10%;
+    position: absolute;
+    top: 35px;
+    left: 3%;
 }
 
+
 .information {
-    padding: 10px 20px;
+    padding: 10px 20px 10px 0;
     font-weight: 700;
     letter-spacing: 0.02px;
     font-size: 18px;
     border-right: 3px dotted rgb(255, 185, 0);
     margin: 40px 0;
     line-height: 35px;
+    width: 35%;
+    box-sizing: border-box;
+
 }
 
 .information p span {
@@ -225,7 +248,7 @@ section.main {
     padding: 10px 50px 10px 20px;
     font-size: 18px;
     line-height: 25px;
-    width: 600px;
+    width: 65%;
 }
 
 /* Skills */
@@ -237,15 +260,15 @@ section.main {
 .secondrect {
     position: absolute;
     background: #FAFAFF;
-    width: 980px;
+    width: 68%;
     height: 430px;
     right: 0;
 
 }
 
-.skills>h1 {
+.secondrect h1 {
     position: absolute;
-    left: 610px;
+    left: 150px;
     top: 20px;
 }
 
@@ -275,6 +298,8 @@ section.main {
 .skills section div:nth-of-type(2) {
     border-right: 3px dotted rgb(255, 185, 0);
     border-left: 3px dotted rgb(255, 185, 0);
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .skills i {
@@ -393,11 +418,12 @@ article.contact h1 {
 div.container {
     display: flex;
     justify-content: center;
+
 }
 
 section.info {
     background-color: rgb(255, 185, 0);
-    width: 520px;
+    width: 36%;
     height: 620px;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
 }
@@ -406,7 +432,7 @@ section.form {
     background: #FFFFFF;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
     height: 620px;
-    width: 730px;
+    width: 50.7%;
 }
 
 .info div .fa-envelope {
@@ -421,6 +447,7 @@ section.form {
     color: white;
     line-height: 28px;
     letter-spacing: 1px;
+    padding-right: 40px;
 }
 
 
@@ -469,10 +496,11 @@ section.form {
 
 .form {
     position: relative;
+
 }
 
 .container .form h1 {
-    padding: 40px;
+    padding: 40px 8%;
 }
 
 
@@ -483,35 +511,36 @@ section.form {
 }
 
 .form div {
-    display: flex;
-    flex-direction: column;
-    width: 730px;
-    align-items: center;
+    width: 100%;
+    text-align: center;
 }
 
 input {
-    width: 650px;
     border-radius: 15px;
     background: #FAFAFF;
     font-size: 18px;
     line-height: 25px;
     margin-bottom: 20px;
     padding: 15px;
-    box-sizing: border-box;
     font-family: arial;
+    width: 80%;
 }
 
 textarea {
-    width: 650px;
     border-radius: 15px;
     background: #FAFAFF;
     font-size: 18px;
     line-height: 25px;
     margin-bottom: 15px;
     padding: 15px;
-    box-sizing: border-box;
     font-family: arial;
     border: none;
+    width: 80%;
+}
+
+input:nth-child(1) {
+    border-bottom: 0;
+    border-right: 0;
 }
 
 form+form input {

@@ -17,17 +17,17 @@
             <div class="logo"><i class="fas fa-code"></i>Dev</div>
             <nav>
                 <ul>
-                    <li>About Me</li>
-                    <li>Skills</li>
-                    <li>Portfolio</li>
-                    <li>Contact</li>
+                    <li><a href="#aboutme">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
 
         <header>
-            <h1>Welcome!</h1>
-            <h2>My name is Designer</h2>
+            <h1 class="h1-header">Welcome!</h1>
+            <h2 class="h2-header">My name is Designer</h2>
             <div class="socialmedia"><i class="fab fa-facebook"></i><i class="fab fa-instagram"></i>
                 <i class="fab fa-twitter-square"></i><i class="fab fa-github"></i><i class="fab fa-linkedin-in"></i>
             </div>
@@ -41,31 +41,37 @@
             </ul>
         </div>
 
-        <article class="aboutme">
-            <div class="firstrect"></div>
-            <h1>About Me</h1>
-            <section class="main"><img class="profile" src="img/20643284_1157112654420435_8712553590343367036_o.jpg"
-                    alt="profilowe">
-                <div class="information">
-                    <p>Full name: <span>Igor Haczkowski</span></p>
-                    <p>Age: <span>23 years</span></p>
-                    <p>Profile: <span>Frontend</span></p>
-                    <p>Telephone: <span>665 839 203</span></p>
-                    <p>E-mail: <span>igorhaczkowski@gmail.com</span></p>
-                </div>
-                <div class="description">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum omnis sunt fugiat, cupiditate
-                        eligendi nisi consequatur esse voluptates reiciendis atque architecto sit dolorum, tempore
-                        beatae placeat non culpa minima Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-                        labore tempora nobis fuga ab, repellendus, at officiis cumque quisquam adipisci vero mollitia id
-                        ipsam nulla maiores inventore quam provident dignissimos.</p>
+        <article class="aboutme" id="aboutme">
+            <div class="firstrect">
+                <h1>About Me</h1>
+            </div>
+            <section class="main">
+                <img class="profile" src="img/20643284_1157112654420435_8712553590343367036_o.jpg" alt="profilowe">
+                <div class="about-inside">
+                    <div class="information">
+                        <p>Full name: <span>Igor Haczkowski</span></p>
+                        <p>Age: <span>23 years</span></p>
+                        <p>Profile: <span>Frontend</span></p>
+                        <p>Telephone: <span>665 839 203</span></p>
+                        <p>E-mail: <span>igorhaczkowski@gmail.com</span></p>
+                    </div>
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum omnis sunt fugiat, cupiditate
+                            eligendi nisi consequatur esse voluptates reiciendis atque architecto sit dolorum, tempore
+                            beatae placeat non culpa minima Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Illum
+                            labore tempora nobis fuga ab, repellendus, at officiis cumque quisquam adipisci vero
+                            mollitia id
+                            ipsam nulla maiores inventore quam provident dignissimos.</p>
+                    </div>
                 </div>
             </section>
         </article>
 
-        <article class="skills">
-            <div class="secondrect"></div>
-            <h1>Skills</h1>
+        <article class="skills" id='skills'>
+            <div class="secondrect">
+                <h1>Skills</h1>
+            </div>
             <section class="main">
                 <div>
                     <i class="fas fa-edit"></i>
@@ -85,7 +91,7 @@
             </section>
         </article>
 
-        <article class="portfolio">
+        <article class="portfolio" id="portfolio">
             <h1>Portfolio</h1>
             <div class="galery">
                 <div class="photo">
@@ -113,13 +119,13 @@
                 </div>
             </div>
         </article>
-        <article class="contact">
+        <article class="contact" id="contact">
             <h1>Contact us</h1>
             <div class="container">
                 <section class="info">
                     <div>
                         <i class="far fa-envelope"></i>
-                        <p>Please describe your question. <br> Send me a message and i will <br> answer you as soon as
+                        <p>Please describe your question. Send me a message and i will answer you as soon as
                             posible.
                         </p>
                     </div>
